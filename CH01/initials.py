@@ -14,12 +14,12 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
-print("JJJJJJJJJ") print("IIIIIIIII")
-print("     JJ  ") print("     II  ")
-print("     JJ  ") print("     II  ")
-print(" JJ  JJ  ") print("     ")
-print("  JJ JJ  ")
-print("    JJ   ")
+print("JJJJJJJJJ    IIIIIIIII")
+print("     JJ           II  ")
+print("     JJ           II  ")
+print(" JJ  JJ           II  ")
+print("  JJ JJ           II  ")
+print("    JJ       IIIIIIIII")
 
 
 
@@ -53,7 +53,7 @@ TTTTTTTT     JJJJJJJJ
 
 1. Did you have to submit this code more than once before it passed? If so, what
    did you have to change?
-
+once
 
 
 
