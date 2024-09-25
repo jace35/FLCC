@@ -1,7 +1,7 @@
 
 
-# NAME: Jace
-# DATE: Ingram
+# NAME: Jace Ingram
+# DATE: 9-25-2024
 # BRIEF DESCRIPTION: converts celsius to fahrenheit
 
 
@@ -27,7 +27,7 @@ def convert_C_to_F():
     Formula = (9/5)
     Fahrenheit = (Celsius * Formula) + 32
 
-    print(f"{Celsius} degrees Celsius is {Fahrenheit} degrees Fahrenheit")
+    print(f"{Celsius} degrees Celsius is {Fahrenheit} degrees Fahrenheit.")
 
 
 

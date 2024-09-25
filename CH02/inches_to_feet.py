@@ -1,7 +1,7 @@
 # FILE NAME - inches_to_feet.py
 
-# NAME:Jace
-# DATE: Ingram
+# NAME:Jace Ingram
+# DATE: 9-25-2024
 # BRIEF DESCRIPTION:  convert inches to feet and remaining inches
 
 
@@ -29,7 +29,7 @@ def convert():
     feet = int(inches / 12)
     r_inches = inches % 12
     
-    print(f"{inches} inches is {feet} feet, and {r_inches} inches.")
+    print(f"{inches} inches is {feet} feet, and {r_inches} inches")
     
     
     

@@ -1,4 +1,4 @@
-# FILE NAME - random_number.py
+# FILE NAME - password.py
 
 # NAME: 
 # DATE: 
@@ -11,19 +11,19 @@
 # 3. Be sure to answer the Reflection Questions and Attestation below
 # 4. The Sample Output has been included in this code for your convenience
 
-import random
+
 
 def main():
-    generate_random_number()
+    generate_password()
 
-def generate_random_number():
+def generate_password():
 
   
     ########## ENTER YER CODE BELOW THIS LINE ##########
 
     import random
-    (0, 1)
-    print(random.random())
+    user_seed = int(input("Enter a seed for the random number generation: "))
+    
 
 
 
@@ -43,7 +43,9 @@ main()
 
 '''
 
-0.8525041884365221
+Enter a seed for the random number generation: 33
+Your random password is:
+_fUhI78-
 
 '''
 
@@ -51,7 +53,9 @@ main()
 
 '''
 
-0.13938116419681712
+Enter a seed for the random number generation: 22
+Your random password is:
+#hAtO21(
 
 '''
 
@@ -59,7 +63,9 @@ main()
 
 '''
 
-0.6717733648463142
+Enter a seed for the random number generation: 0
+Your random password is:
+)yNbI87)
 
 '''
 
@@ -71,8 +77,14 @@ main()
 
 '''
 
-1. Why is your output most certainly different than the sample output? 
+1. What was the hardest part of completing this lab? 
 
+
+
+
+
+
+2. What value do you see in the `string` module?
 
 
 

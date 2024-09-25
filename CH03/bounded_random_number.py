@@ -1,4 +1,4 @@
-# FILE NAME - random_number.py
+# FILE NAME - bounded_random_number.py
 
 # NAME: 
 # DATE: 
@@ -11,19 +11,20 @@
 # 3. Be sure to answer the Reflection Questions and Attestation below
 # 4. The Sample Output has been included in this code for your convenience
 
-import random
+
 
 def main():
-    generate_random_number()
+    bounded_random()
 
-def generate_random_number():
-
+def bounded_random():
+    
   
     ########## ENTER YER CODE BELOW THIS LINE ##########
-
     import random
-    (0, 1)
-    print(random.random())
+    user_seed = int(input("Enter a seed for the random number generation: "))
+    random.seed(user_seed)
+
+    print(random.randint(1, 10))
 
 
 
@@ -43,7 +44,8 @@ main()
 
 '''
 
-0.8525041884365221
+Enter a seed for the random number generation: 33
+10
 
 '''
 
@@ -51,7 +53,8 @@ main()
 
 '''
 
-0.13938116419681712
+Enter a seed for the random number generation: 32
+2
 
 '''
 
@@ -59,7 +62,8 @@ main()
 
 '''
 
-0.6717733648463142
+Enter a seed for the random number generation: 100
+3
 
 '''
 
@@ -71,9 +75,8 @@ main()
 
 '''
 
-1. Why is your output most certainly different than the sample output? 
-
-
+1. What is a good way to remember if the arguments (parameters) for a bounded number are inclusive or exclusive?
+    
 
 
 
