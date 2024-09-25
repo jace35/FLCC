@@ -2,7 +2,7 @@
 
 # NAME: Jace
 # DATE: Ingram
-# BRIEF DESCRIPTION:  
+# BRIEF DESCRIPTION: converts celsius to fahrenheit
 
 
 
@@ -23,13 +23,12 @@ def convert_C_to_F():
     # Don't forget to cast user input as a float!
     
     ########## ENTER YER CODE BELOW THIS LINE ##########
+    Celsius = float(input("Enter a temperature in celsius:"))
+    Formula = (9/5)
+    Fahrenheit = (Celsius * Formula) + 32
 
-    Celsius = float(input("Enter a Temperature in celsius:"))
-    Formula = float(9/5)
-    Fahrenheit = ({Celsius} * {Formula} + 32)
+    print(f"{Celsius} degrees Celsius is {Fahrenheit} degrees Fahrenheit")
 
-    print(f"{Celsius} degrees Celsius is {Fahrenheit} degrees fahrenheit")
-    
 
 
 
@@ -83,14 +82,14 @@ Enter a temperature in Celsius: 1
 '''
 
 1. What does `float` mean?
-
+it's a decimal representation of a number
 
 
 
 
 2. Why do you think it is important to use `float` as opposed to
    a different type of variable type?
-
+if you use something like a int a user could easily break your code.
 
 
 
