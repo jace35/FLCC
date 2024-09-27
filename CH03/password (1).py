@@ -22,12 +22,13 @@ def generate_password():
     ########## ENTER YER CODE BELOW THIS LINE ##########
 
     import random
-    user_seed = int(input("Enter a seed for the random number generation: "))
-    
-
-
-
-
+    import string
+    generate_password = int(input("Enter a seed for the random number generation: "))
+    random.seed(generate_password)
+    characters = string.ascii_letters + string.digits + string.punctuation
+    password_length = 8
+    password = ''.join(random.choice(characters) for _ in range(password_length))
+    print(f"your random password is:{password}")
 
 
 

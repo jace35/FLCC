@@ -1,0 +1,42 @@
+#multiplication - addition
+#ff
+import random
+
+def main():
+    while True:
+        calculator()
+        response = input("Do you want to continue? (yes/no): ").strip().lower()
+        if response != 'yes':
+            print("Thank you for using the calculator! Goodbye!")
+            break
+
+def calculator():
+    use_random = input("Would you like to enter numbers (type 'input') or use random numbers (type 'random')? ").strip().lower()
+    
+    if use_random == 'random':
+        num1 = random.uniform(1, 100)
+        num2 = random.uniform(1, 100)
+    elif use_random == 'input':
+        try:
+            num1 = float(input("Enter a number: "))
+            num2 = float(input("Enter another number: "))
+        except ValueError:
+            print("Invalid input! Please enter numeric values.")
+            return
+    else:
+        print("Invalid choice! Please type 'input' or 'random'.")
+        return
+
+    result = num1 * num2
+    print(f"The product of {num1} * {num2} is: {result}!")
+
+    try:
+        num3 = float(input("Enter a number to add to your product: ")) if use_random == 'input' else random.uniform(1, 100)
+    except ValueError:
+        print("Invalid input! Please enter a numeric value.")
+        return
+
+    result2 = result + num3
+    print(f"Congrats! The sum of {result} + {num3} is: {result2}!")
+
+main()
