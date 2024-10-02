@@ -25,9 +25,19 @@ def generate_password():
     import string
     generate_password = int(input("Enter a seed for the random number generation: "))
     random.seed(generate_password)
-    characters = string.ascii_letters + string.digits + string.punctuation
-    password_length = 8
-    password = ''.join(random.choice(characters) for _ in range(password_length))
+    
+    # characters = string.ascii_letters + string.digits + string.punctuation
+    # password_length = 8
+    # password = ''.join(random.choice(characters) for _ in range(password_length))
+    
+    password = random.choice('!@#$&(),-_')
+    password += random.choice(string.ascii_lowercase)
+    password += random.choice(string.ascii_uppercase)
+    password += random.choice(string.ascii_lowercase)
+    password += random.choice(string.ascii_uppercase)
+    password += random.choice(string.digits)
+    password += random.choice(string.digits)
+    password += random.choice('!@#$&(),-_')
     print(f"your random password is:{password}")
 
 

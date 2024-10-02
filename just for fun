@@ -1,5 +1,6 @@
 #multiplication - addition
 #ff
+
 import random
 
 def main():
